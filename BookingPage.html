@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snazzy Paws Grooming - Booking</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img src="Images/SnazzyPawsLogo.PNG" alt="Snazzy Paws Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-paw"></i> Home</a></li>
+                    <li><a href="ServicesPage.html"><i class="fas fa-paw"></i> Services</a></li>
+                    <li><a href="GalleryPage.html"><i class="fas fa-paw"></i> Gallery</a></li>
+                    <li><a href="BookingPage.html"><i class="fas fa-paw"></i> Booking</a></li>
+                    <li><a href="ContactPage.html"><i class="fas fa-paw"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="page-title">Book an Appointment</h1>
+        <p class="page-subtitle">Choose a service and schedule your snazzy visit today!</p>
+
+        <div class="booking-form-container">
+            <form class="booking-form">
+                <button type="button" class="start-button">Get Started!</button>
+
+                <h2>Booking Form</h2>
+
+                <label for="service">Select a service</label>
+                <select id="service" name="service" required>
+                    <option value="" disabled selected>Service</option>
+                    <option value="bath">Bathing/Basic Care</option>
+                    <option value="haircuts">Haircuts and Styling</option>
+                    <option value="nails">Nail and Paw Care</option>
+                </select>
+
+                <label for="date">Select a date</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Select a time</label>
+                <select id="time" name="time" required>
+                    <option value="" disabled selected>Time</option>
+                    <option value="09:00">9:00 AM</option>
+                    <option value="09:30">9:30 AM</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="10:30" disabled>10:30 AM (Unavailable)</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="11:30" disabled>11:30 AM (Unavailable)</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="12:30">12:30 PM</option>
+                    <option value="01:00">1:00 PM</option>
+                    <option value="01:30">1:30 PM</option>
+                    <option value="02:00">2:00 PM</option>
+                    <option value="02:30">2:30 PM</option>
+                    <option value="03:00" disabled>3:00 PM (Unavailable)</option>
+                    <option value="03:30">3:30 PM</option>
+                    <option value="04:00">4:00 PM</option>
+                    <option value="04:30">4:30 PM</option>
+                </select>
+
+                <label for="name">Enter your name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+                <label for="email">Enter your email</label>
+                <input type="email" id="email" name="email" placeholder="john.doe@hotmail.com" required>
+
+                <label for="phone">Enter your phone number</label>
+                <input type="tel" id="phone" name="phone" placeholder="0123456789" required>
+
+                <button type="submit" class="confirm-button">Confirm Booking</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>Snazzy Paws Grooming 2025 © - Open Monday to Saturday, 9 AM to 5 PM</p>
+    </footer>
+</body>
+</html>

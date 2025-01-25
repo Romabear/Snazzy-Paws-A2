@@ -1,0 +1,335 @@
+/* General Styles */
+html, body {
+    height: 100%; /* Ensures the full height is used for the layout */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8d7da; /* Light pink */
+    color: #333;
+}
+
+/* Header */
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+header .logo {
+    height: 50px;
+}
+
+header nav {
+    flex: 1;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+/* Page Title */
+.page-title {
+    text-align: center;
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.page-subtitle {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555; /* Optional: A softer text color for the subtitle */
+}
+
+/* Main Content */
+main {
+    flex: 1; /* Ensures the main content expands to push the footer to the bottom */
+}
+
+/* Home Page */
+.home-page .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.home-page .content img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Page */
+.contact-page .contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 40px 20px;
+}
+
+.contact-page .contact-content .round-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.contact-page .contact-form {
+    max-width: 600px;
+    width: 100%;
+}
+
+.contact-page .contact-form h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contact-page .contact-form p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-page .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adds uniform spacing between elements */
+}
+
+.contact-page .contact-form form label {
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-page .contact-form form input,
+.contact-page .contact-form form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-page .contact-form form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.contact-page .contact-form form button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    align-self: center; /* Centers the button */
+}
+
+.contact-page .contact-form form button:hover {
+    background-color: #555;
+}
+
+
+/* Services Page */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the grid */
+    padding: 20px;
+}
+
+.services-grid .service-item {
+    text-align: center;
+}
+
+.service-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Rounded images */
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-image:hover {
+    transform: scale(1.1);
+}
+
+.service-item p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Gallery Page */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.gallery-item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+/* Booking Page */
+.booking-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; /* Ensures the form elements are centered */
+}
+
+.booking-form label {
+    font-size: 16px;
+    width: 100%;
+    text-align: left; /* Align labels to the left */
+}
+
+.booking-form input,
+.booking-form select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Consistent width */
+    box-sizing: border-box;
+}
+
+.booking-form .start-button,
+.booking-form .confirm-button {
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 100%; /* Same width as input fields */
+    cursor: pointer;
+}
+
+.booking-form .start-button:hover,
+.booking-form .confirm-button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+footer .social-icons a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .booking-form-container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    .home-page .content img {
+        width: 200px;
+        height: 200px;
+    }
+}
