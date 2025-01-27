@@ -1,12 +1,5 @@
 /* General Styles */
-html, body {
-    height: 100%; /* Ensures the full height is used for the layout */
-}
-
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -66,11 +59,6 @@ header nav ul li a {
     color: #555; /* Optional: A softer text color for the subtitle */
 }
 
-/* Main Content */
-main {
-    flex: 1; /* Ensures the main content expands to push the footer to the bottom */
-}
-
 /* Home Page */
 .home-page .content {
     display: flex;
@@ -115,24 +103,17 @@ main {
 .contact-page .contact-form h1 {
     font-size: 36px;
     margin-bottom: 10px;
-    text-align: center;
 }
 
 .contact-page .contact-form p {
     font-size: 18px;
     margin-bottom: 20px;
-    text-align: center;
 }
 
 .contact-page .contact-form form {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Adds uniform spacing between elements */
-}
-
-.contact-page .contact-form form label {
-    font-size: 16px;
-    color: #333;
+    gap: 15px;
 }
 
 .contact-page .contact-form form input,
@@ -142,12 +123,6 @@ main {
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 100%;
-    box-sizing: border-box;
-}
-
-.contact-page .contact-form form textarea {
-    height: 100px;
-    resize: vertical;
 }
 
 .contact-page .contact-form form button {
@@ -158,14 +133,11 @@ main {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 100%;
-    align-self: center; /* Centers the button */
 }
 
 .contact-page .contact-form form button:hover {
     background-color: #555;
 }
-
 
 /* Services Page */
 .services-grid {
@@ -210,6 +182,12 @@ main {
     padding: 20px;
 }
 
+.gallery-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .gallery-item img {
     width: 200px;
     height: 200px;
@@ -226,7 +204,7 @@ main {
 
 /* Booking Page */
 .booking-form-container {
-    max-width: 600px;
+    max-width: 600px; /* Centered and narrower for better appearance */
     margin: 0 auto;
     padding: 20px;
     background-color: white;
@@ -274,12 +252,19 @@ main {
     background-color: #555;
 }
 
+.booking-form h2 {
+    text-align: center;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
 /* Footer */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px;
+    margin-top: 40px;
 }
 
 footer .social-icons {
