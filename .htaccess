@@ -1,6 +1,6 @@
-<Files "roster.html">
+
     AuthType Basic
     AuthName "Restricted Area"
     AuthUserFile "C:/xampp/htdocs/SnazzyPawsA2/.htpasswd"
     Require valid-user
-</Files>
+
